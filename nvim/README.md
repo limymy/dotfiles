@@ -35,3 +35,14 @@ sudo cmake --build build/ --target uninstall
 sudo rm /usr/local/bin/nvim
 sudo rm -r /usr/local/share/nvim/
 ```
+
+### LazyVim
+```
+sudo apt install luarocks ripgrep fd-find fzf
+```
+
+### Copilot-Chat
+`node.js`：推荐使用nvm安装
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+```
