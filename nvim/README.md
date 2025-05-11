@@ -4,6 +4,9 @@
 
 #### Windows
 可以使用`Scoop`或`Chocolatey`
+```
+scoop install neovim
+```
 
 #### 源码编译
 
@@ -37,12 +40,19 @@ sudo rm -r /usr/local/share/nvim/
 ```
 
 ### LazyVim
+#### windows
+部分插件需要编译`c`代码，这里额外安装`llvm`
+```
+scoop install ripgrep fd llvm
+```
+
+#### Ubuntu
 ```
 sudo apt install luarocks ripgrep fd-find fzf
 ```
 
 ### Copilot-Chat
-`node.js`：推荐使用nvm安装
+`node.js`：推荐使用nvm工具进行版本管理
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 ```
