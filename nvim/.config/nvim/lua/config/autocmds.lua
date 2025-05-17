@@ -7,11 +7,11 @@
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
-vim.api.nvim_create_autocmd({"BufLeave", "InsertLeave"}, {
+vim.api.nvim_create_autocmd({ "BufLeave", "InsertLeave" }, {
   pattern = "*",
   callback = function()
-    if vim.bo.modified then
-      vim.cmd("write")
+    if vim.bo.buftype == "" and vim.bo.modifiable and vim.bo.modified then
+      vim.cmd("silent! update")
     end
   end,
 })
