@@ -4,6 +4,7 @@ return {
     lazy = true,
     cmd = { "ToggleTerm" },
     keys = {
+      { "<leader>T", "", desc = "+terminal" },
       {
         "<leader>Tf",
         function()
@@ -96,5 +97,5 @@ return {
       --   }
       -- }
     },
-  }
+  },
 }
