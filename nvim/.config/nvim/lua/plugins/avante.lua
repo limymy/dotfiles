@@ -18,6 +18,19 @@ return {
           __inherited_from = "copilot",
           model = "gemini-2.5-pro",
         },
+        openwebui_gemma3 = {
+          __inherited_from = "openai",
+          endpoint = "https://chat.bhr.lmy.name/api",
+          model = "gemma3:27b-it-qat",
+          api_key_name = "OPENWEBUI_API_KEY",
+          disable_tools = true,
+        },
+        openwebui_qwen3 = {
+          __inherited_from = "openai",
+          endpoint = "https://chat.bhr.lmy.name/api",
+          model = "qwen3:32b-q8_0",
+          api_key_name = "OPENWEBUI_API_KEY",
+        },
       },
       behaviour = {
         auto_suggestions = true,
