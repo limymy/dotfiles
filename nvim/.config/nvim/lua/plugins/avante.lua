@@ -7,7 +7,9 @@ return {
       auto_suggestions_provider = "copilot",
       copilot = {
         model = "claude-sonnet-4",
-        max_tokens = 32768,
+        extra_request_body = {
+          max_tokens = 32768,
+        },
       },
       vendors = {
         copilot_gpt4_1 = {
@@ -18,17 +20,17 @@ return {
           __inherited_from = "copilot",
           model = "gemini-2.5-pro",
         },
-        openwebui_gemma3 = {
+        openwebui_devstral = {
           __inherited_from = "openai",
           endpoint = "https://chat.bhr.lmy.name/api",
-          model = "gemma3:27b-it-qat",
+          model = "hf.co/unsloth/Devstral-Small-2505-GGUF:Q6_K",
           api_key_name = "OPENWEBUI_API_KEY",
           disable_tools = true,
         },
         openwebui_qwen3 = {
           __inherited_from = "openai",
           endpoint = "https://chat.bhr.lmy.name/api",
-          model = "qwen3:32b-q8_0",
+          model = "hf.co/unsloth/Qwen3-32B-GGUF:Q6_K",
           api_key_name = "OPENWEBUI_API_KEY",
         },
       },
