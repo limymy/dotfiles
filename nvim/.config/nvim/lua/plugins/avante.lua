@@ -5,13 +5,13 @@ return {
     opts = {
       provider = "copilot",
       auto_suggestions_provider = "copilot",
-      copilot = {
-        model = "claude-sonnet-4",
-        extra_request_body = {
-          max_tokens = 32768,
+      providers = {
+        copilot = {
+          model = "claude-sonnet-4",
+          extra_request_body = {
+            max_tokens = 32768,
+          },
         },
-      },
-      vendors = {
         copilot_gpt4_1 = {
           __inherited_from = "copilot",
           model = "gpt-4.1",
