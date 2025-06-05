@@ -12,26 +12,18 @@ return {
             max_tokens = 32768,
           },
         },
-        copilot_gpt4_1 = {
-          __inherited_from = "copilot",
-          model = "gpt-4.1",
-        },
-        copilot_gemini = {
-          __inherited_from = "copilot",
-          model = "gemini-2.5-pro",
-        },
         openwebui_devstral = {
           __inherited_from = "openai",
           endpoint = "https://chat.bhr.lmy.name/api",
           model = "hf.co/unsloth/Devstral-Small-2505-GGUF:Q6_K",
           api_key_name = "OPENWEBUI_API_KEY",
-          disable_tools = true,
         },
         openwebui_qwen3 = {
           __inherited_from = "openai",
           endpoint = "https://chat.bhr.lmy.name/api",
           model = "hf.co/unsloth/Qwen3-32B-GGUF:Q6_K",
           api_key_name = "OPENWEBUI_API_KEY",
+          disable_tools = true,
         },
       },
       behaviour = {
