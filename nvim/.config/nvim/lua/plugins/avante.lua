@@ -12,11 +12,11 @@ return {
             max_tokens = 32768,
           },
         },
-        openwebui_devstral = {
+        openrouter = {
           __inherited_from = "openai",
-          endpoint = "https://chat.bhr.lmy.name/api",
-          model = "hf.co/unsloth/Devstral-Small-2505-GGUF:Q6_K",
-          api_key_name = "OPENWEBUI_API_KEY",
+          endpoint = "https://openrouter.ai/api/v1",
+          api_key_name = "OPENROUTER_API_KEY",
+          model = "qwen/qwen3-coder:free",
         },
         openwebui_qwen3 = {
           __inherited_from = "openai",
