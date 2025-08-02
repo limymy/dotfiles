@@ -6,24 +6,18 @@ return {
       provider = "copilot",
       auto_suggestions_provider = "copilot",
       providers = {
+        gemini = {
+          model = "gemini-2.5-pro",
+          api_key_name = "GEMINI_API_KEY",
+        },
         copilot = {
           model = "claude-sonnet-4",
-          extra_request_body = {
-            max_tokens = 32768,
-          },
         },
         openrouter = {
           __inherited_from = "openai",
           endpoint = "https://openrouter.ai/api/v1",
           api_key_name = "OPENROUTER_API_KEY",
           model = "qwen/qwen3-coder:free",
-        },
-        openwebui_qwen3 = {
-          __inherited_from = "openai",
-          endpoint = "https://chat.bhr.lmy.name/api",
-          model = "hf.co/unsloth/Qwen3-32B-GGUF:Q6_K",
-          api_key_name = "OPENWEBUI_API_KEY",
-          disable_tools = true,
         },
       },
       behaviour = {
