@@ -21,7 +21,7 @@ return {
         },
       },
       behaviour = {
-        auto_suggestions = true,
+        auto_suggestions = false,
       },
       selector = {
         provider = "fzf_lua",
@@ -34,7 +34,7 @@ return {
       "stevearc/dressing.nvim",
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
-      "echasnovski/mini.icons",
+      "nvim-mini/mini.icons",
       {
         "zbirenbaum/copilot.lua",
         opts = {
