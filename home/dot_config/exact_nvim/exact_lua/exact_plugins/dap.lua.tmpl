@@ -1,3 +1,6 @@
+{{- if eq .profile "basic" -}}
+return {}
+{{- else -}}
 return {
   "mfussenegger/nvim-dap",
   dependencies = {
@@ -45,3 +48,4 @@ return {
     },
   },
 }
+{{- end -}}

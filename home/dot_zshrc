@@ -123,3 +123,5 @@ if [[ -f ~/.zshrc.local ]]; then
   source ~/.zshrc.local
 fi
 
+# Host-specific environment/toolchain init (conda/nvm/bun/etc) should live in
+# ~/.zshrc.local to avoid cross-machine path issues.

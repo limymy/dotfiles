@@ -35,10 +35,12 @@ return {
     },
     -- event = { "BufReadPre" },
     opts = function(_, opts)
+{{- if eq .profile "dev" }}
       vim.list_extend(opts.ensure_installed, {
         "fish",
         "rust",
       })
+{{- end }}
       return vim.tbl_deep_extend("force", opts, {
         autotag = {
           enable = true,

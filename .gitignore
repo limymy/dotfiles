@@ -1,2 +1,4 @@
-nvim/.config/*
-!nvim/.config/nvim
+# Local editor/OS noise
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,15 @@
+# OS/profile specific ignores.
+# Patterns match *target paths* (relative to $HOME).
+
+# Windows: don't manage zsh/tmux dotfiles.
+{{- if eq .chezmoi.os "windows" }}
+.zshrc
+.p10k.zsh
+.tmux.conf
+{{- end }}
+
+# Non-Windows: don't manage the Windows Neovim entrypoint.
+{{- if ne .chezmoi.os "windows" }}
+AppData/Local/nvim/init.lua
+{{- end }}
+

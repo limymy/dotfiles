@@ -1,0 +1,5 @@
+# Static template data (committed).
+# Machine-specific overrides should go in ~/.config/chezmoi/chezmoi.toml [data].
+
+# Default profile when no local config exists.
+profile = "dev"

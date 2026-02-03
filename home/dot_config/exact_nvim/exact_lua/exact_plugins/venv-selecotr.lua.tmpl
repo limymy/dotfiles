@@ -1,6 +1,10 @@
+{{- if eq .profile "basic" -}}
+return {}
+{{- else -}}
 return {
   {
     "linux-cultist/venv-selector.nvim",
     enabled = true,
-  }
+  },
 }
+{{- end -}}

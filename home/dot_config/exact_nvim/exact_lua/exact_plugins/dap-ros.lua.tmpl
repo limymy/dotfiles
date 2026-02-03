@@ -1,6 +1,7 @@
-------------------------------------------------
------ Only for Linux
-------------------------------------------------
+{{- if eq .profile "basic" -}}
+return {}
+{{- else -}}
+
 if vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1 then
   return {}
 end
@@ -93,3 +94,4 @@ return {
     return opts
   end,
 }
+{{- end -}}

@@ -1,3 +1,6 @@
+{{- if eq .profile "basic" -}}
+return {}
+{{- else -}}
 return {
   "lervag/vimtex",
   ft = { "tex" },
@@ -16,3 +19,4 @@ return {
     end
   end,
 }
+{{- end -}}
