@@ -13,13 +13,11 @@
         "variant": "max"
       }
     },
-    "sisyphus-junior": {
-      "model": "openai/gpt-5.2",
-      "reasoningEffort": "medium"
-    },
+    // "sisyphus-junior": {
+    //   "model": "openai/gpt-5.2",
+    //   "variant": "high"
+    // },
     "prometheus": {
-      // "model": "openai/gpt-5.2",
-      // "variant": "xhigh"
       "model": "anthropic/claude-opus-4-6",
       "variant": "max"
     },
@@ -28,15 +26,15 @@
       "variant": "max"
     },
     "metis": {
-      "model": "anthropic/claude-opus-4-6",
-      "variant": "high"
+      "model": "openai/gpt-5.4",
+      "variant": "xhigh"
     },
     "momus": {
       "model": "anthropic/claude-opus-4-6",
       "variant": "max"
     },
     "oracle": {
-      "model": "openai/gpt-5.2-pro",
+      "model": "openai/gpt-5.4",
       "variant": "xhigh"
     },
     "librarian": {
@@ -45,10 +43,10 @@
     },
     "explore": {
       "model": "openai/gpt-5.3-codex",
-      "variant": "low"
+      "variant": "medium"
     },
     "multimodal-looker": {
-      "model": "openai/gpt-5.2",
+      "model": "openai/gpt-5.4",
       "variant": "high"
     }
   },
@@ -62,23 +60,20 @@
       "temperature": 0.8
     },
     "ultrabrain": {
-      "model": "openai/gpt-5.2",
+      "model": "openai/gpt-5.4",
       "variant": "xhigh"
     },
     "unspecified-low": {
-      "model": "openai/gpt-5.2",
-      "variant": "medium"
+      "model": "openai/gpt-5.4",
+      "variant": "high"
     },
     "unspecified-high": {
-      "model": "openai/gpt-5.2",
+      "model": "openai/gpt-5.4",
       "variant": "xhigh"
     },
     "deep-reasoning": {
-      "model": "openai/gpt-5.2",
+      "model": "openai/gpt-5.4",
       "variant": "xhigh"
     }
-  },
-  "_migrations": [
-    "model-version:openai/gpt-5.2-codex->openai/gpt-5.3-codex"
-  ]
+  }
 }

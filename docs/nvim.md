@@ -1,9 +1,5 @@
 ## 环境配置
 
-                          ...e/neovim/share/nvim/runtime/lua/vim/treesitter/query.lua:373: Query error at 113:4. Invalid node type "tab":
-  "tab"
-   ^
-
 ### neovim
 
 #### Windows
