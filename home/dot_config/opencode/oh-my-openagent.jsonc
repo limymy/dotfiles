@@ -6,35 +6,35 @@
   ],
   "agents": {
     "sisyphus": {
-      "model": "anthropic/claude-opus-4-6",
-      "variant": "max",
+      "model": "openai/gpt-5.5",
+      "variant": "xhigh",
       "ultrawork": {
-        "model": "anthropic/claude-opus-4-6",
-        "variant": "max"
+        "model": "openai/gpt-5.5",
+        "variant": "xhigh"
       }
     },
-    // "sisyphus-junior": {
-    //   "model": "openai/gpt-5.2",
-    //   "variant": "high"
-    // },
+    "plan": {
+      "model": "openai/gpt-5.5",
+      "variant": "xhigh"
+    },
     "prometheus": {
-      "model": "anthropic/claude-opus-4-6",
-      "variant": "max"
+      "model": "openai/gpt-5.5",
+      "variant": "xhigh"
     },
     "atlas": {
-      "model": "anthropic/claude-opus-4-6",
-      "variant": "max"
+      "model": "openai/gpt-5.5",
+      "variant": "xhigh"
     },
     "metis": {
-      "model": "openai/gpt-5.4",
+      "model": "openai/gpt-5.5",
       "variant": "xhigh"
     },
     "momus": {
-      "model": "anthropic/claude-opus-4-6",
+      "model": "anthropic/claude-opus-4-7",
       "variant": "max"
     },
     "oracle": {
-      "model": "openai/gpt-5.4",
+      "model": "openai/gpt-5.5",
       "variant": "xhigh"
     },
     "librarian": {
@@ -46,7 +46,7 @@
       "variant": "medium"
     },
     "multimodal-looker": {
-      "model": "openai/gpt-5.4",
+      "model": "openai/gpt-5.5",
       "variant": "high"
     }
   },
@@ -55,25 +55,29 @@
       "model": "openai/gpt-5.2"
     },
     "visual-engineering": {
-      "model": "anthropic/claude-opus-4-6",
+      "model": "anthropic/claude-opus-4-7",
       "variant": "max",
       "temperature": 0.8
     },
     "ultrabrain": {
-      "model": "openai/gpt-5.4",
+      "model": "openai/gpt-5.5",
       "variant": "xhigh"
     },
     "unspecified-low": {
-      "model": "openai/gpt-5.4",
+      "model": "openai/gpt-5.5",
       "variant": "high"
     },
     "unspecified-high": {
-      "model": "openai/gpt-5.4",
+      "model": "openai/gpt-5.5",
       "variant": "xhigh"
     },
     "deep-reasoning": {
-      "model": "openai/gpt-5.4",
+      "model": "openai/gpt-5.5",
       "variant": "xhigh"
+    },
+    "writing": {
+      "model": "openai/gpt-5.5",
+      "variant": "high"
     }
   }
 }
